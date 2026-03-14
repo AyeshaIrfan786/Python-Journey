@@ -1,0 +1,72 @@
+# 🐍 My Python Learning Journey - Day 1
+
+**Date:** 14 March 2026  
+**Goal for Today:** Learn the basics of Python and understand core data types.
+
+---
+
+## Topics Covered
+
+1. **Introduction to Python**
+   - Python is an interpreted, high-level, general-purpose programming language.
+   - Easy to read and write, great for beginners.
+
+2. **Variables**
+   - Variables are used to store data.
+   - Example:
+     ```python
+     name = "Aisha"
+     age = 19
+     ```
+   - No need to declare data types explicitly; Python infers them automatically.
+
+3. **Data Types**
+   - **String (`str`)**: Text data
+     ```python
+     greeting = "Hello, World!"
+     ```
+   - **Integer (`int`)**: Whole numbers
+     ```python
+     number = 100
+     ```
+   - **Float (`float`)**: Decimal numbers
+     ```python
+     price = 19.99
+     ```
+   - **Boolean (`bool`)**: True or False
+     ```python
+     is_python_fun = True
+     ```
+
+4. **Lists**
+   - Ordered, mutable collections of items.
+   - Example:
+     ```python
+     fruits = ["apple", "banana", "cherry"]
+     fruits.append("orange")  # Adding an item
+     print(fruits[0])  # Accessing first item
+     ```
+
+5. **Tuples**
+   - Ordered, immutable collections of items.
+   - Example:
+     ```python
+     colors = ("red", "green", "blue")
+     print(colors[1])  # Accessing second item
+     ```
+
+---
+
+## Key Learnings
+- Python is beginner-friendly and uses indentation instead of braces `{}`.
+- Lists are flexible (can change), tuples are fixed (cannot change).
+- Variables and data types are fundamental to storing and manipulating data.
+
+---
+
+- Learn **control flow**: `if`, `else`, `elif` statements.
+- Practice creating and manipulating lists and tuples.
+
+---
+
+> "Python is powerful, yet simple. Every line you write is a step forward on your journey."  
