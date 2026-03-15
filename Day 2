@@ -1,0 +1,122 @@
+# 🐍 Python Learning Journey – Day 2
+
+**Date:** 15 March 2026
+**Focus:** Python Sets, Introduction to Pandas, Basic Data Processing
+
+---
+
+## 📚 Topics Covered
+
+### 1️⃣ Python Sets
+
+* A **set** is an unordered collection of unique elements.
+* Sets automatically remove duplicate values.
+
+Example:
+
+```python
+numbers = {1, 2, 3, 3, 4, 5}
+
+print(numbers)
+```
+
+Output:
+
+```
+{1, 2, 3, 4, 5}
+```
+
+Common operations:
+
+```python
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a.union(b))        # {1,2,3,4,5}
+print(a.intersection(b)) # {3}
+```
+
+Key Points:
+
+* No duplicate values
+* Unordered
+* Useful for mathematical operations like union and intersection
+
+---
+
+### 2️⃣ Introduction to Pandas
+
+**Pandas** is a Python library used for:
+
+* Data analysis
+* Data manipulation
+* Data processing
+
+It is widely used in **Data Science and Machine Learning**.
+
+Installation:
+
+```bash
+python -m pip install pandas
+```
+
+Importing pandas:
+
+```python
+import pandas as pd
+```
+
+---
+
+### 3️⃣ Basic Data Processing with Pandas
+
+Example of creating a simple dataset:
+
+```python
+import pandas as pd
+
+data = {
+    "Name": ["Ali", "Sara", "Ahmed"],
+    "Age": [21, 20, 22],
+    "City": ["Islamabad", "Lahore", "Karachi"]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+```
+
+Output:
+
+```
+    Name  Age        City
+0    Ali   21   Islamabad
+1   Sara   20      Lahore
+2  Ahmed   22     Karachi
+```
+
+What I learned:
+
+* Creating a **DataFrame**
+* Organizing structured data
+* Viewing datasets
+
+---
+
+## 🧠 Key Learnings
+
+* Sets store **unique elements** and support mathematical operations.
+* Pandas helps in **handling structured data efficiently**.
+* DataFrames are like **tables (rows and columns)** used for data analysis.
+
+---
+
+## 🎯 Next Goals
+
+* Learn **Pandas Series vs DataFrame**
+* Explore **data filtering and selection**
+* Practice small **data analysis tasks**
+
+---
+
+✨ *Every day of learning Python brings me closer to mastering AI and Machine Learning.*
