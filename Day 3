@@ -1,0 +1,113 @@
+# 🐍 Python Learning Journey – Day 3
+
+**Date:** 16 March 2026
+**Focus:** Functions in Python + Mini Project (Snake 🐍 Water 💧 Gun 🔫 Game)
+
+---
+
+## 📚 Topics Covered
+
+### 1️⃣ Functions in Python
+
+* Functions help organize code into reusable blocks.
+* They improve readability and reduce repetition.
+
+Basic syntax:
+
+```python
+def greet(name):
+    print("Hello", name)
+
+greet("Aisha")
+```
+
+Key Points:
+
+* Use `def` to define a function
+* Functions can take parameters
+* Functions can return values
+
+---
+
+### 2️⃣ My First Mini Project 🎮
+
+**Snake 🐍 Water 💧 Gun 🔫 Game**
+
+I created a simple game using:
+
+* `random` module
+* conditionals (`if-else`)
+* user input
+* dictionaries
+
+---
+
+## 💻 Project Code
+
+```python
+import random
+
+def get_computer_choice():
+    return random.randint(0, 2)
+
+def get_user_choice():
+    user_input = input("Enter s (snake), w (water), g (gun): ")
+    choices = {"s": 0, "w": 1, "g": 2}
+    
+    if user_input not in choices:
+        print("Invalid input!")
+        return None
+    
+    return choices[user_input]
+
+def determine_winner(comp, user):
+    if comp == user:
+        return "Draw"
+    elif (comp == 0 and user == 1) or \
+         (comp == 1 and user == 2) or \
+         (comp == 2 and user == 0):
+        return "You Lose!"
+    else:
+        return "You Win!"
+
+def display_choice(choice):
+    reverse = {0: "Snake", 1: "Water", 2: "Gun"}
+    return reverse[choice]
+
+# Game starts here
+computer = get_computer_choice()
+user = get_user_choice()
+
+if user is not None:
+    print(f"Computer chose {display_choice(computer)}")
+    result = determine_winner(computer, user)
+    print(result)
+```
+
+---
+
+## 🧠 Key Learnings
+
+* Functions make code **modular and reusable**
+* Breaking code into parts makes debugging easier
+* Learned how to structure a **real mini project**
+* Used logic to simulate a simple game
+
+---
+
+## 🚀 Improvements I Can Make
+
+* Add a **loop** to play multiple rounds
+* Add a **score system**
+* Improve UI (better messages and formatting)
+
+---
+
+## 🎯 Next Goals
+
+* Combine loops + functions for better projects
+* Start building slightly bigger Python projects
+
+---
+
+✨ *From learning basics to building games — progress is happening step by step.*
