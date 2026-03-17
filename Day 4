@@ -1,0 +1,106 @@
+# 🐍 Python Learning Journey – Day 4
+
+**Date:** 17 March 2026  
+**Focus:** Loops + Data Processing + Project Enhancement (Student Analyzer)
+
+---
+
+## 📚 Topics Covered
+
+### 1️⃣ Loops in Python
+Loops help us **repeat code automatically** instead of writing the same thing multiple times.
+
+#### **For Loop Example**
+```python
+for i in range(5):
+    print("Python Learning", i)
+
+
+While Loop Example
+count = 0
+while count < 5:
+    print("Learning Python")
+    count += 1
+
+Key Points:
+
+for loop → known number of iterations
+
+while loop → runs until a condition is False
+
+2️⃣ Project Enhancement: Student Data Analyzer
+Goal:
+
+Automatically calculate average marks
+
+Identify topper and lowest scorer
+
+Count how many students passed
+
+Use loops + functions
+
+💻 Enhanced Code
+import pandas as pd
+
+# Step 1: Create DataFrame
+data = {
+    "Name": ["Ali", "Sara", "Aleena", "SAZA", "hhshs"],
+    "Marks": [85, 90, 78, 92, 88]
+}
+df = pd.DataFrame(data)
+
+# Step 2: Add PASS/FAIL using loop
+results = []
+for mark in df["Marks"]:
+    if mark >= 80:
+        results.append("PASS")
+    else:
+        results.append("FAIL")
+df["Results"] = results
+
+# Step 3: Functions
+def average_marks(df):
+    return df["Marks"].mean()
+
+def topper(df):
+    for i in range(len(df)):
+        if df["Marks"][i] == df["Marks"].max():
+            return df["Name"][i], df["Marks"][i]
+
+def lowest(df):
+    for i in range(len(df)):
+        if df["Marks"][i] == df["Marks"].min():
+            return df["Name"][i], df["Marks"][i]
+
+def passed_count(df):
+    count = 0
+    for result in df["Results"]:
+        if result == "PASS":
+            count += 1
+    return count
+
+# Step 4: Display
+print("\nFull Data:\n", df)
+print("\nAverage Marks:", average_marks(df))
+top_name, top_marks = topper(df)
+print("Topper:", top_name, "with marks", top_marks)
+low_name, low_marks = lowest(df)
+print("Lowest scorer:", low_name, "with marks", low_marks)
+print("Number of students passed:", passed_count(df))
+🧠 Key Learnings
+
+Loops simplify repetitive tasks
+
+Functions + loops = clean, modular, reusable code
+
+Data processing using Pandas prepares you for ML datasets
+
+Learned to analyze data dynamically instead of hardcoding values
+
+🚀 Next Steps
+
+Learn reading and writing CSV files
+
+Practice filtering data with conditions
+
+Start exploring datasets for ML projects
