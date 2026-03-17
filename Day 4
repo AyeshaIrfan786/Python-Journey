@@ -1,11 +1,14 @@
 # 🐍 Python Learning Journey – Day 4
 
+
+
 **Date:** 17 March 2026  
 **Focus:** Loops + Data Processing + Project Enhancement (Student Analyzer)
 
 ---
 
 ## 📚 Topics Covered
+
 
 ### 1️⃣ Loops in Python
 Loops help us **repeat code automatically** instead of writing the same thing multiple times.
@@ -96,6 +99,8 @@ Functions + loops = clean, modular, reusable code
 Data processing using Pandas prepares you for ML datasets
 
 Learned to analyze data dynamically instead of hardcoding values
+
+
 
 🚀 Next Steps
 
